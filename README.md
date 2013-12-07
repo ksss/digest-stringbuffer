@@ -1,5 +1,7 @@
 # Digest::StringBuffer
 
+[![Build Status](https://travis-ci.org/ksss/digest-stringbuffer.png?branch=master)](https://travis-ci.org/ksss/digest-stringbuffer)
+
 **Digest::StringBuffer** is a class that just only to string buffering for message digest.
 
 **Digest::StringBuffer** increase speed by limiting function.
