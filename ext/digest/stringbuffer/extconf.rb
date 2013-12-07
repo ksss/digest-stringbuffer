@@ -2,4 +2,4 @@ require 'mkmf'
 
 $preload = %w[digest]
 
-create_makefile('digest/stringbuffer')
+create_makefile('digest/stringbuffer/stringbuffer')
