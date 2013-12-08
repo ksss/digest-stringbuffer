@@ -14,7 +14,7 @@ Digest::StringBuffer depends only one method `finish`.
 
 ```ruby
 module Digest
-  class Prime31
+  class Prime31 < StringBuffer
     def initialize
       @prime = 31
     end
