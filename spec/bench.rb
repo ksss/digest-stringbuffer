@@ -40,7 +40,7 @@ Benchmark.bm do |x|
     Digest::BenchClass.digest("abc" * 1_000_000)
   end
 
-  x.report("Digest::Buffer long string") do
+  x.report("Digest::StringBuffer long string") do
     Digest::BenchBuffer.digest("abc" * 1_000_000)
   end
 
@@ -50,7 +50,7 @@ Benchmark.bm do |x|
     }
   end
 
-  x.report("Digest::Buffer meny times") do
+  x.report("Digest::StringBuffer meny times") do
     1000_000.times {
       Digest::BenchBuffer.digest("abc")
     }
