@@ -29,7 +29,7 @@ module Digest
   end
 end
 
-p Digest::Prime.hexdigest("abc" * 1000) #=> "008b1190"
+p Digest::Prime31.hexdigest("abc" * 1000) #=> "008b1190"
 ```
 
 ## APIs
