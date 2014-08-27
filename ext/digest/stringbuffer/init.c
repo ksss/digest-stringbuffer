@@ -37,7 +37,10 @@ buffer_realloc(buffer_t* ptr, size_t size)
 static void
 buffer_free(buffer_t* ptr)
 {
-	xfree(ptr->buffer);
+	if (ptr->buffer != NULL)
+		xfree(ptr->buffer);
+	if (ptr != NULL)
+		xfree(ptr);
 }
 
 static size_t
